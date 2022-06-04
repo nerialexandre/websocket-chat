@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es2017",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "lib": [
+      "es6"
+    ],
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "resolveJsonModule": true,
+    // "baseUrl": ".",
+    // "paths": {
+    //   "@config/*": ["./src/config/*"]
+    // }
+  },
+  "include": [
+    "src/**/*",
+    "routes.ts"
+  ]
+}
