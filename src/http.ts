@@ -2,6 +2,7 @@ import express from 'express'
 import { createServer } from 'http'
 import mongoose from 'mongoose'
 import path from 'path'
+import 'reflect-metadata'
 import { Server } from 'socket.io'
 import { router } from './routes'
 const app = express()

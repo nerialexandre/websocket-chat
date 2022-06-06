@@ -1,4 +1,4 @@
-import mongoose, { Document } from "mongoose";
+import mongoose, { Document } from 'mongoose';
 
 type User = Document & {
   name: string;
@@ -12,9 +12,9 @@ const UserSchema = new mongoose.Schema({
   email: String,
   avatar: String,
   socketId: String,
-  password: String,
+  password: String
 })
 
-const User = mongoose.model<User>("Users", UserSchema)
+const User = mongoose.model<User>('Users', UserSchema)
 
 export { User };

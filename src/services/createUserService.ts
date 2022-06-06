@@ -1,4 +1,5 @@
 import { User } from 'src/schemas/User'
+import { injectable } from 'tsyringe'
 
 // import { Request, Response } from "express";
 interface CreateUserDTO {
@@ -9,8 +10,9 @@ interface CreateUserDTO {
   socketId: string
 }
 
+@injectable()
 class CreateUserService {
-  async excute({
+  async excute ({
     name,
     email,
     password,
@@ -31,7 +33,8 @@ class CreateUserService {
             password,
             name
           }
-        }
+        },
+        { new: true }
       ).exec()
       return user
     } else {
@@ -47,3 +50,5 @@ class CreateUserService {
     }
   }
 }
+
+export { CreateUserService }

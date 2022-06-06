@@ -20,6 +20,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "no-undef": "off"
+        "no-undef": "off",
+        "eslint no-redeclare": "off",
     }
 }
